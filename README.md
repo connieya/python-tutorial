@@ -35,5 +35,11 @@
 - [for](basic/for/__init__.py)
 - [while](basic/while/__init__.py)
 
+# 웹 스크래핑
 
+- [Requests](web_scraping/01_basic/request.py)
+- [정규식](web_scraping/01_basic/4_re.py)
+- [User-Agent](web_scraping/01_basic/user_agent.py)
+- [웹 스크래핑 - 네이버 웹툰](web_scraping/01_basic/bs_ex.py)
+- [웹 스크래핑 활용](web_scraping/01_basic/bs_2.py)
 
