@@ -1,4 +1,11 @@
-# 기본 문법
+
+# chapter2 
+
+## 05.Ajax
+- [미세먼지 api](jungle/chapter2/ajax.html)
+
+
+# 파이썬 기본 문법
 - [문자열](basic/str/str.py)
 - [문자열 포맷](basic/str/strFormat.py)
 - [문자열 슬라이스](basic/str/slice.py)
@@ -14,5 +21,4 @@
 - [while](basic/while/__init__.py)
 
 
-# numpy
 

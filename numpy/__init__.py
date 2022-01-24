@@ -9,11 +9,11 @@ import librosa
 import warnings
 # from matplotlib import pyplot as plt
 
-df = pd.DataFrame
-print(df)
+
 warnings.filterwarnings("ignore")
 
-data_path = 'C:/workspace/audio'
+path = 'C:/workspace/audio'
 
 
-
+file = glob(path)
+print(file)
