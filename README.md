@@ -47,3 +47,6 @@
 - [웹 스크래핑 - 네이버 웹툰](web_scraping/01_basic/bs_ex.py)
 - [웹 스크래핑 활용](web_scraping/01_basic/bs_2.py)
 
+# flask
+
+- [flask ajax introduction](flaskAjax)
