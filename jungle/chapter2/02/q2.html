@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미세먼지 값 출력</title>
+    <!-- CSS only -->
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .wrap {
+        width: 800px;
+        margin: 12px auto;
+      }
+      .form-box {
+        border: 4px solid yellowgreen;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <script>
+      mise_list = [];
+
+      function add() {
+        gu = $("#gu_name").val();
+        mise = $("#mise").val();
+        if (gu.length == 0 || mise.length == 0) {
+          alert("값을 입력하세요");
+          return;
+        }
+        if (isNaN(mise)) {
+          alert("숫자만 입력하세요");
+          return;
+        }
+        
+        mise_list.push({ "gu": gu, "mise": parseInt(mise) });
+        console.log(mise_list);
+        let liHtml = `<li>${gu} : ${mise}</li>`;
+        $(".list").append(liHtml);
+        $("#gu_name").val("");
+        $("#mise").val("");
+        $("#gu_name").focus();
+      }
+      function reset() {
+        $(".list").empty();
+        mise_list = [];
+      }
+
+      function print() {
+        value = $("#mise_value").val();
+        if (value.length == 0) {
+          alert("값을 입력하세요");
+          return;
+        }
+        if (isNaN(value)) {
+          alert("숫자만 입력하세요");
+          return;
+        }
+        $(".print").empty();
+        let cnt = 0;
+        let html;
+        for (let i = 0; mise_list.length; i++) {
+          if (mise_list[i]["mise"] <= value) {
+            cnt++;
+            html  = `<li class="mise-condition">
+                        ${mise_list[i]["gu"]} : ${mise_list[i]["mise"]}</li>`;
+
+             $(".print").append(html);
+          }
+        }
+        if(cnt == 0) {
+          html = `<p>해당 하는 구가 없습니다. </p>`
+          $(".print").append(html);
+        }
+        $('#mise_value').val("");  
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="jumbotron">
+        <h1 class="display-4">미세 먼지 값 출력하기</h1>
+        <hr class="my-4" />
+        <p class="lead">
+          구 이름과 미세먼지 값을 입력 , 해당 값에 해당하는 구 출력
+        </p>
+      </div>
+      <div class="form-box">
+        <div class="form-group">
+          <label for="exampleInputEmail1">구 이름</label>
+          <input type="text" class="form-control" id="gu_name" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">미세먼지 값</label>
+          <input type="text" class="form-control" id="mise" />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">특정 값 이하 출력</label>
+          <input type="text" class="form-control" id="mise_value" />
+        </div>
+        <button onclick="add()" class="btn btn-primary">추가</button>
+        <button onclick="reset()" class="btn btn-danger">초기화</button>
+        <button onclick="print()" class="btn btn-success">출력</button>
+      </div>
+      <div>
+        <ul class="list"></ul>
+        <ul class="print"></ul>
+      </div>
+    </div>
+  </body>
+</html>

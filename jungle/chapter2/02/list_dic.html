@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function js() {
+        let a_list = [];
+        a_list.push(1);
+        a_list.push(12);
+        a_list.push(13);
+        a_list.push("안녕");
+        console.log("a_list 리스트 출력 결과");
+        console.log(a_list);
+        let a_dic = { name: "cony", age: 29 };
+        console.log("a_dic 결과 =>", a_dic);
+        dic_list = [];
+        b_dic = { name: "건희", age: 29 };
+        c_dic = { name: "코니", age: 29 };
+        d_dic = { name: "건오", age: 24 };
+        e_dic = { nick: "connie", gg: 29 };
+        dic_list.push(b_dic);
+        dic_list.push(c_dic);
+        dic_list.push(d_dic);
+        dic_list.push(e_dic);
+        console.log("dic_list 결과 =>", dic_list);
+        console.log('dic_list의 2번째 인덱스의 이름=> dic_list[2]["name"] ',dic_list[2]['name'])
+        console.log('dic_list의 3번째 인덱스의 닉네임=> dic_list[3]["nick"] ',dic_list[3]['nick'])
+          console.log('dic_list의 3번째 인덱스의 gg=> dic_list[3]["gg"] ',dic_list[3]['gg'])
+
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="js()">버튼</button>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>합을 구하는 함수</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function sum() {
+        n = $("#num").val();
+        if (isNaN(n)) {
+          alert("숫자만 입력하세요");
+        } else {
+          $(".result").empty();
+          let result = 0;
+          for (let i = 1; i <= n; i++) {
+            result += i;
+          }
+          $(".result").append(result);
+          $("#num").val("");
+          $("#num").focus();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>1부터 n까지의 합을 구하는 함수</h1>
+      <p>숫자만 입력하세요</p>
+      숫자 : <input type="text" id="num" />
+      <button type="submit"  onclick="sum()">클릭</button>
+      <div class="result"></div>
+    </div>
+  </body>
+</html>

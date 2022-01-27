@@ -8,18 +8,24 @@
 - [구글 웹 폰트 & css 파일 분리](jungle/chapter1/css2.md) 
   
 ## 05.부트스트랩
+- [부트스트랩 시작](jungle/chapter1/05/boot.md)
 - [부트스트랩 연습](jungle/chapter1/05/bootstrap.html)
+
+
 # chapter2 
 ## 01.JavaScript 소개
 ## 02.자바스크립트 연습
+- [javaScript 리스트, 딕셔너리](jungle/chapter2/02/list_dic.html)
+- [1부터 n까지의 합](jungle/chapter2/02/q1.html)
+- [미세 먼지 n값이 이하 출력](jungle/chapter2/02/q2.html)
 ## 03.jQuery
 ## 04.서버-클라이언트 통신
 ## 05.Ajax
 - [미세먼지 api](jungle/chapter2/ajax.html)
 - [고양이 랜덤 api](jungle/chapter2/cat.html)
 
-# chapter3
 
+# chapter3
 ## 01.Python
 ## 02.파이썬 응용문제
 - [과일 갯수 세기 함수](jungle/chapter3/02/q1.py)
@@ -32,7 +38,6 @@
 - [find , update 연습](jungle/chapter3/05/find_update.py)
 
 # chapter4
-
 ## 01.Flask
 - [가상환경 설정](jungle/chapter4/01)
 - [나홀로 링크 메모장](jungle/chapter4/02)
@@ -54,7 +59,6 @@
 - [while](basic/while/__init__.py)
 
 # 웹 스크래핑
-
 - [Requests](web_scraping/01_basic/request.py)
 - [정규식](web_scraping/01_basic/4_re.py)
 - [User-Agent](web_scraping/01_basic/user_agent.py)
