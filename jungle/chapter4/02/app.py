@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from pymongo import MongoClient
-client = MongoClient('localhost', 27017)
+client = MongoClient('mongodb://test:test@3.37.86.47', 27017)
 db = client.dbjungle
 
 ## HTML을 주는 부분
