@@ -8,9 +8,12 @@
 - [구글 웹 폰트 & css 파일 분리](jungle/chapter1/css2.md) 
   
 ## 05.부트스트랩
-
+- [부트스트랩 연습](jungle/chapter1/05/bootstrap.html)
 # chapter2 
-
+## 01.JavaScript 소개
+## 02.자바스크립트 연습
+## 03.jQuery
+## 04.서버-클라이언트 통신
 ## 05.Ajax
 - [미세먼지 api](jungle/chapter2/ajax.html)
 - [고양이 랜덤 api](jungle/chapter2/cat.html)
