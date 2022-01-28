@@ -28,9 +28,12 @@
 - [자바스크립트 & jQuery 연습](jungle/chapter2/03/jquery_quiz.html)
 
 ## 04.서버-클라이언트 통신
+
+
 ## 05.Ajax
-- [미세먼지 api](jungle/chapter2/ajax.html)
-- [고양이 랜덤 api](jungle/chapter2/cat.html)
+- [Ajax 시작하기](jungle/chapter2/05/ajax.md)
+- [미세먼지 api](jungle/chapter2/05/ajax.html)
+- [고양이 랜덤 api](jungle/chapter2/05/cat.html)
 
 
 # chapter3
@@ -38,7 +41,12 @@
 ## 02.파이썬 응용문제
 - [과일 갯수 세기 함수](jungle/chapter3/02/q1.py)
 - [사람의 나이 출력하기](jungle/chapter3/02/q2.py)
+
+
 ## 03.파이썬 패키지
+- [패키지](jungle/chapter3/03/패키지.md)
+
+
 ## 04.웹스크래핑
 ## 05.MongoDB
 - [pymongo insert , update](jungle/chapter3/05/mongo.py)
