@@ -13,12 +13,20 @@
 
 
 # chapter2 
+
 ## 01.JavaScript 소개
+
 ## 02.자바스크립트 연습
 - [javaScript 리스트, 딕셔너리](jungle/chapter2/02/list_dic.html)
 - [1부터 n까지의 합](jungle/chapter2/02/q1.html)
 - [미세 먼지 n값이 이하 출력](jungle/chapter2/02/q2.html)
+
+
 ## 03.jQuery
+- [자주 쓰이는 jQuery](jungle/chapter2/03/j.md)
+- [포스팅 박스 열기/닫기 기능](jungle/chapter2/03/bootstrap.html)
+- [자바스크립트 & jQuery 연습](jungle/chapter2/03/jquery_quiz.html)
+
 ## 04.서버-클라이언트 통신
 ## 05.Ajax
 - [미세먼지 api](jungle/chapter2/ajax.html)

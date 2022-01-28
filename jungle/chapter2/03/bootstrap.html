@@ -19,6 +19,20 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 
+        <script>
+            function openclose() {
+                let status = $('#post-box').css('display')
+                if(status == 'none') {
+                    $("#post-box").show();
+                    $("#post-btn").text("포스팅박스 닫기");
+                }else {
+                     $("#post-box").hide();
+                     $("#post-btn").text("포스팅박스 열기");
+
+                }
+            }
+        </script>
+
     <title>SW사관학교 정글 | 부트스트랩 연습하기</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -41,10 +55,8 @@
         .posting-box {
             margin: 10px auto 30px auto;
             width:500px;
-
             border: 3px solid black;
             border-radius: 5px;
-
             padding: 25px;
         }
     </style>
@@ -57,10 +69,10 @@
             <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
             <hr class="my-4">
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
+                <a class="btn btn-primary btn-lg" id="post-btn" onclick="openclose()" role="button">포스팅박스 열기</a>
             </p>
         </div>
-        <div id = "post-box" class="posting-box">
+        <div id ="post-box" class="posting-box" style="display: none" >
             <div class="form-group">
                 <label for="exampleInputEmail1">아티클 URL</label>
                 <input id="article" type="email" class="form-control" aria-describedby="emailHelp"
