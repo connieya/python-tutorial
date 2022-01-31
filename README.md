@@ -48,6 +48,9 @@
 
 
 ## 04.웹스크래핑
+- [BeautifulSoup 사용법](jungle/chapter3/04/webScraping.py)
+  
+
 ## 05.MongoDB
 - [pymongo insert , update](jungle/chapter3/05/mongo.py)
 - [크롤링 결과 db에 저장](jungle/chapter3/05/webscrap.py)
@@ -79,7 +82,8 @@
 - [정규식](web_scraping/01_basic/4_re.py)
 - [User-Agent](web_scraping/01_basic/user_agent.py)
 - [웹 스크래핑 - 네이버 웹툰](web_scraping/01_basic/bs_ex.py)
-- [웹 스크래핑 활용](web_scraping/01_basic/bs_2.py)
+- [웹 스크래핑 활용 - 웹툰(가우스 전자)](web_scraping/01_basic/bs_2.py)
+- [웹 스크래핑 활용 - 쿠팡](web_scraping/02/coupang.py)
 
 # flask
 
