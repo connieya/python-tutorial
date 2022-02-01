@@ -4,27 +4,32 @@ db = client.dbjungle                     # 'dbsparta'라는 이름의 db를 만�
 
 
 result = db.movies.find({})
+# db.movies.insert_one({'rank' : 51 ,'title':'매트릭스','star':9.33})
+
+
+
 #  db에 있는 제목들 추출하기 
-print("***************** DB에 있는 모든 영화 **************")
-for res in result :
-    print(res['title'])
 
-print("************************ 특정 영화 평점 검색 **************")
-target_movie = db.movies.find_one({'title':'매트릭스'})
+# print("***************** DB에 있는 모든 영화 **************")
+# for res in result :
+#     print(res['title'])
 
-print(target_movie['star'])
+# print("************************ 특정 영화 평점 검색 **************")
+# target_movie = db.movies.find_one({'title':'매트릭스'})
 
-star = target_movie['star']
+# print(target_movie['star'])
+
+# star = target_movie['star']
 
 
-print("************** 매트릭스 평점과 같은 영화들 **************")
+# print("************** 매트릭스 평점과 같은 영화들 **************")
 
-movies = list(db.movies.find({'star': star}))
+# movies = list(db.movies.find({'star': star}))
 
-for movie in movies :
-    print(movie['title'])
+# for movie in movies :
+#     print(movie['title'])
 
 
 print("*********** 매트릭스 평점 변경하기 ***********")
 
-db.movies.update_one({'title':'매트릭스'},{'$set' : {'star':0}})
+db.movies.update_one({'title':'매트릭스'},{'$set' : {'star':9.80}})

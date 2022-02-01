@@ -11,7 +11,6 @@
 - [부트스트랩 시작](jungle/chapter1/05/boot.md)
 - [부트스트랩 연습](jungle/chapter1/05/bootstrap.html)
 
-
 # chapter2 
 
 ## 01.JavaScript 소개
@@ -38,31 +37,6 @@
 
 # chapter3
 ## 01.Python
-## 02.파이썬 응용문제
-- [과일 갯수 세기 함수](jungle/chapter3/02/q1.py)
-- [사람의 나이 출력하기](jungle/chapter3/02/q2.py)
-
-
-## 03.파이썬 패키지
-- [패키지](jungle/chapter3/03/패키지.md)
-
-
-## 04.웹스크래핑
-- [BeautifulSoup 사용법](jungle/chapter3/04/webScraping.py)
-  
-
-## 05.MongoDB
-- [pymongo insert , update](jungle/chapter3/05/mongo.py)
-- [크롤링 결과 db에 저장](jungle/chapter3/05/webscrap.py)
-- [find , update 연습](jungle/chapter3/05/find_update.py)
-
-# chapter4
-## 01.Flask
-- [가상환경 설정](jungle/chapter4/01)
-- [나홀로 링크 메모장](jungle/chapter4/02)
-- [무비스타](jungle/chapter4/03)
-
-# 파이썬 기본 문법
 - [문자열](basic/str/str.py)
 - [문자열 포맷](basic/str/strFormat.py)
 - [문자열 슬라이스](basic/str/slice.py)
@@ -76,15 +50,38 @@
 - [if](basic/if/__init__.py)
 - [for](basic/for/__init__.py)
 - [while](basic/while/__init__.py)
+## 02.파이썬 응용문제
+- [과일 갯수 세기 함수](jungle/chapter3/02/q1.py)
+- [사람의 나이 출력하기](jungle/chapter3/02/q2.py)
 
-# 웹 스크래핑
+
+## 03.파이썬 패키지
+- [패키지](jungle/chapter3/03/패키지.md)
+
+
+## 04.웹스크래핑
+- [BeautifulSoup 사용법](jungle/chapter3/04/webScraping.py)
 - [Requests](web_scraping/01_basic/request.py)
 - [정규식](web_scraping/01_basic/4_re.py)
 - [User-Agent](web_scraping/01_basic/user_agent.py)
 - [웹 스크래핑 - 네이버 웹툰](web_scraping/01_basic/bs_ex.py)
 - [웹 스크래핑 활용 - 웹툰(가우스 전자)](web_scraping/01_basic/bs_2.py)
-- [웹 스크래핑 활용 - 쿠팡](web_scraping/02/coupang.py)
+- [웹 스크래핑 활용 - 쿠팡](web_scraping/02/bs4_cp.py)
 
-# flask
+## 05.MongoDB
+- [pymongo 사용하기](jungle/chapter3/05/mongo.py)
+- [크롤링 결과 db에 저장](jungle/chapter3/05/webscrap.py)
+- [find , update 연습](jungle/chapter3/05/find_update.py)
 
+# chapter4
+## 01.Flask
+- [가상환경 설정](jungle/chapter4/01/flask.md)
+- [나홀로 링크 메모장](jungle/chapter4/02)
+- [무비스타](jungle/chapter4/03)
 - [flask ajax introduction](flaskAjax)
+
+# chapter5
+## 06.서버 완성
+
+- [서버 세팅](jungle/chapter5/aws.md)
+
