@@ -145,8 +145,15 @@
           },
         });
       }
-      function fn() {
-        console.log("tlqkf");
+      function postStar() {
+        $.ajax({
+          type: "get",
+          url: "/api/post",
+          data: { },
+          success: function (response) {
+            console.log(response);
+          },
+        });
       }
     
     </script>
@@ -165,6 +172,7 @@
           class="btn btn-primary"
           data-toggle="modal"
           data-target="#es"
+          onclick="postStar()"
         >
           추가
         </button>

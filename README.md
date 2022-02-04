@@ -1,11 +1,14 @@
 # chapter1
 ## 01.웹기초
+
 ## 02.시작하기
+- Code Pan 사이트 활용하기  https://codepen.io/
 ## 03.HTML
 ## 04.CSS
 - [자주 쓰는 CSS](jungle/chapter1/css.md)
 - [CSS 연습 - 로그인 페이지](jungle/chapter1/q1.html) 
 - [구글 웹 폰트 & css 파일 분리](jungle/chapter1/css2.md) 
+- [구글 클론 html & css](jungle/chapter1/jocoding/index.html)
   
 ## 05.부트스트랩
 - [부트스트랩 시작](jungle/chapter1/05/boot.md)
@@ -23,6 +26,7 @@
 
 ## 03.jQuery
 - [자주 쓰이는 jQuery](jungle/chapter2/03/j.md)
+- [클로킹 레이스](jungle/chapter2/jocoding/index.html)
 - [포스팅 박스 열기/닫기 기능](jungle/chapter2/03/bootstrap.html)
 - [자바스크립트 & jQuery 연습](jungle/chapter2/03/jquery_quiz.html)
 

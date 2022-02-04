@@ -6,9 +6,9 @@ from flask import Flask , render_template , jsonify , request
 
 app = Flask(__name__)
 
-# client = MongoClient('localhost',27017)
+client = MongoClient('localhost',27017)
 # client = MongoClient('mongodb://test:test@localhost',27017)
-client = MongoClient('mongodb://connie:1234@3.37.86.47',27017)
+# client = MongoClient('mongodb://connie:1234@3.37.86.47',27017)
 db = client.geonhee
 
 
@@ -37,6 +37,9 @@ def delete_star() :
     db.movies.delete_one({'name':name})
     return jsonify({'msg' :'삭제 완료'})
 
+@app.route('/api/post', methods=['get'])
+def post_star():
+    return render_template('post.html')
 
 if __name__ == '__main__' :
     app.run('0.0.0.0',port=5000 , debug=True)

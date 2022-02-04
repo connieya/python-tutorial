@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 
 from pymongo import MongoClient
 
-# client = MongoClient('localhost',27017)
-client = MongoClient('mongodb://connie:1234@3.37.86.47',27017)
+client = MongoClient('localhost',27017)
+# client = MongoClient('mongodb://connie:1234@3.37.86.47',27017)
 db = client.geonhee
 headers = { 
         'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36'
