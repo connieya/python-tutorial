@@ -1,7 +1,7 @@
 from http import client
 from pymongo import MongoClient
 
-from flask import Flask , render_template , jsonify , request
+from flask import Flask, redirect , render_template , jsonify , request
 
 
 app = Flask(__name__)
@@ -35,11 +35,23 @@ def like_star() :
 def delete_star() :
     name = request.form['name']
     db.movies.delete_one({'name':name})
-    return jsonify({'msg' :'삭제 완료'})
+    return jsonify({'msg' :'삭제 완료' })
 
-@app.route('/api/post', methods=['get'])
+
+@app.route('/api/post', methods=['POST'])
 def post_star():
+    name = request.form['nameReceiver']
+    recent = request.form['recentReceiver']
+    url = request.form['urlReceiver']
+    db.movies.insert_one({'name' :name , 'recent_work' : recent , 'image_url' : url , 'like' :0})
+    return jsonify({'msg' :'등록 완료' })
+
+        
+
+@app.route('/api/page', methods=['GET'])
+def post_page():  
     return render_template('post.html')
+
 
 if __name__ == '__main__' :
     app.run('0.0.0.0',port=5000 , debug=True)

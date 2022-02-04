@@ -1,0 +1,40 @@
+.center {
+  text-align: center;
+}
+
+.star-list {
+  width: 500px;
+  margin: 20px auto 0 auto;
+}
+
+.star-name {
+  display: inline-block;
+}
+
+.star-name:hover {
+  text-decoration: underline;
+}
+
+.card {
+  margin-bottom: 15px;
+}
+.add-btn {
+  margin-right: 20px;
+}
+.btn {
+  float: right;
+  font-weight: bold;
+  font-size: 26px;
+}
+.wrap {
+  width: 500px;
+  margin: 10px auto;
+  height: 500px;
+  border: 2px solid navy;
+  padding: 14px;
+}
+#postTitle {
+  /* background-color: burlywood; */
+  padding-top: 35px;
+  padding-bottom: 55px;
+}
