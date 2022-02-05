@@ -6,9 +6,9 @@ from flask import Flask, redirect , render_template , jsonify , request
 
 app = Flask(__name__)
 
-client = MongoClient('localhost',27017)
+# client = MongoClient('localhost',27017)
 # client = MongoClient('mongodb://test:test@localhost',27017)
-# client = MongoClient('mongodb://connie:1234@3.37.86.47',27017)
+client = MongoClient('mongodb://connie:1234@13.209.19.241',27017)
 db = client.geonhee
 
 
@@ -45,6 +45,9 @@ def post_star():
     url = request.form['urlReceiver']
     db.movies.insert_one({'name' :name , 'recent_work' : recent , 'image_url' : url , 'like' :0})
     return jsonify({'msg' :'등록 완료' })
+    # return render_template('index.html')
+
+
 
         
 

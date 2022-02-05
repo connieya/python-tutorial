@@ -42,9 +42,9 @@
           url: "/api/list",
           data: {},
           success: function (response) {
-            console.log(response);
+            // console.log(response);
             let movie_list = response["movies"];
-            console.log(movie_list);
+            // console.log(movie_list);
             for (let i = 0; i < movie_list.length; i++) {
               image_url = movie_list[i]["image_url"];
               like = movie_list[i]["like"];
